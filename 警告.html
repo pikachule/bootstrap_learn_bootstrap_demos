@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 实例 - 可取消的警告（Dismissal Alerts）</title>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h3>创建一个可取消的警告（Dismissal Alert）步骤如下：</h3>
+    <p>
+      <ol>
+        <li>通过创建一个 &lt;div&gt;，并向其添加一个 .alert class 和四个上下文 class（即 .alert-success、.alert-info、.alert-warning、.alert-danger）之一，来添加一个基本的警告框。</li>
+        <li>同时向上面的 &lt;div&gt; class 添加可选的 .alert-dismissable。</li>
+        <li>添加一个关闭按钮。</li>
+      </ol>
+    </p>
+    <div class="alert alert-success alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" 
+        aria-hidden="true">
+        &times;
+      </button>
+      成功！很好地完成了提交。
+    </div>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" 
+        aria-hidden="true">
+        &times;
+      </button>
+      信息！请注意这个信息。
+    </div>
+    <div class="alert alert-warning alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" 
+        aria-hidden="true">
+        &times;
+      </button>
+      警告！请不要提交。
+    </div>
+    <div class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" 
+        aria-hidden="true">
+        &times;
+      </button>
+      错误！请进行一些更改。
+    </div>
+
+
+  </body>
+</html>

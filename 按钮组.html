@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Bootstrap实例 - 按钮组</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2>默认按钮 btn-group</h2>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">按钮 1</button>
+          <button type="button" class="btn btn-default">按钮 2</button>
+        </div>
+
+        <hr class="alert-danger">
+
+        <h2>btn-toolbar 不同group之间有间隔</h2>
+        <div class="btn-toolbar" role="toolbar">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">按钮 1</button>
+            <button type="button" class="btn btn-default">按钮 2</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">按钮 4</button>
+            <button type="button" class="btn btn-default">按钮 5</button>
+          </div>
+        </div>
+
+        <hr class="alert-danger">
+
+        <h2>btn-group-lg,sm,xs</h2>
+        <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-default">按钮 1</button>
+          <button type="button" class="btn btn-default">按钮 2</button>
+        </div>
+        <div class="btn-group btn-group-sm">
+          <button type="button" class="btn btn-default">按钮 4</button>
+          <button type="button" class="btn btn-default">按钮 5</button>
+        </div>
+        <div class="btn-group btn-group-xs">
+          <button type="button" class="btn btn-default">按钮 7</button>
+          <button type="button" class="btn btn-default">按钮 8</button>
+        </div>
+
+        <hr class="alert-danger">
+        
+        <h2>.btn-group相互嵌套，主要用于菜单</h2>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">按钮 1</button>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" 
+              data-toggle="dropdown">
+              下列
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">下拉链接 1</a></li>
+              <li><a href="#">下拉链接 2</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="alert-danger">
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-default">按钮 1</button>
+          <button type="button" class="btn btn-default">按钮 2</button>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" 
+              data-toggle="dropdown">
+              下拉
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">下拉链接 1</a></li>
+              <li><a href="#">下拉链接 2</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

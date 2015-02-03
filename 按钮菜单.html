@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" lang="zh-CN">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap实例 - 按钮菜单</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            默认1
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">菜单1</a></li>
+            <li><a href="#">菜单2</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">wahaha</li>
+            <li><a href="#">菜单3</a></li>
+          </ul>
+        </div>
+        
+        <br>
+        
+        <div class="btn-group dropup" style="margin-top: 200px;">
+         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+           默认2（向上)<span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" role="menu">
+            <li><a href="#">菜单1</a></li>
+            <li><a href="#">菜单2</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">wahaha</li>
+            <li><a href="#">菜单3</a></li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>

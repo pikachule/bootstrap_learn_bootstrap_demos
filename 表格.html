@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 实例 - 表格</title>
+    <meta charset="UTF-8" lang="zh-CN"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <table class="table">
+          <caption>基本的表格布局</caption>
+          <thead>
+            <tr>
+              <th>名称</th>
+              <th>城市</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tanmay</td>
+              <td>Bangalore</td>
+            </tr>
+            <tr>
+              <td>Sachin</td>
+              <td>Mumbai</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+      <div class="row">
+        <h2> .table 为任意表格添加基本样式 (只有横向分隔线):</h2>            
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>John</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+
+      <div class="row">
+        <h2> .table-striped 类在 tbody 内添加斑马线形式的条纹 ( IE8 不支持):</h2>                  
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>John</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+      <div class="row">
+        <h2> .table-bordered 类为所有表格的单元格添加边框:</h2>                        
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>John</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+      <div class="row">
+        <h2> .table-hover 类启用表格中 tbody 上的行的悬停效果：</h2>                              
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>John</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+      <div class="row">
+        <h2> .table-condensed 类让表格更加紧凑:</h2>                                    
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>John</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-danger"/>
+
+      <div class="row">
+        <h2> .active .success .info .warning .danger 类将悬停的颜色应用在行或者单元格上:</h2>                                        
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active">
+              <td>1</td>
+              <td>Anna</td>
+            </tr>
+            <tr class="sucess">
+              <td>2</td>
+              <td>Debbie</td>
+            </tr>
+            <tr class="info">
+              <td>3</td>
+              <td>John</td>
+            </tr>
+            <tr class="warning">
+              <td>4</td>
+              <td>David</td>
+            </tr>
+            <tr class="danger">
+              <td>5</td>
+              <td>Lissa</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="alert-info"/>
+
+      <div class="table-responsive">
+        <h2> .table-responsive支持不同设备的查看</h2>
+        <p>通过把任意的 .table 包在 .table-responsive class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。</p>
+        <table class="table">
+          <caption>响应式表格布局</caption>
+          <thead>
+            <tr>
+              <th>产品</th>
+              <th>付款日期</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>产品1</td>
+              <td>23/11/2013</td>
+              <td>待发货</td>
+            </tr>
+            <tr>
+              <td>产品2</td>
+              <td>10/11/2013</td>
+              <td>发货中</td>
+            </tr>
+            <tr>
+              <td>产品3</td>
+              <td>20/10/2013</td>
+              <td>待确认</td>
+            </tr>
+            <tr>
+              <td>产品4</td>
+              <td>20/10/2013</td>
+              <td>已退货</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>  
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" lang="zh-CN">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap实例 - 导航栏</title>
+  </head>
+  <body style="padding: 50px">
+    <div class="container">
+      <h2>说明:</h2>
+      <p>导航栏是一个很好的功能，是 Bootstrap 网站的一个突出特点。导航栏是响应式元组件就，作为应用程序或网站的导航标题。导航栏在移动设备的视图中是折叠的，随着可用视口宽度的增加，导航栏也会水平展开。在 Bootstrap 导航栏的核心中，导航栏包括了为站点名称和基本的导航定义样式。</p>
+      <div class="row">
+
+        <div class="header">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Hooha Homepage</a>
+            </div>
+            <div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">iOS</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Program Language 
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">SSH</a></li>
+                    <li><a href="#">RoR</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <p>Bootstrap面包屑breadcrumbs</p>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li class="active">Comments</li>
+        </ol>
+
+      </div>
+
+      <hr class="alert-danger">
+      <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-nav-menu">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">HooHooHaHa</a>
+           </div>
+
+           <div id="my-nav-menu" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Demo1</a></li>
+               <li><a href="#">Demo2</a></li>
+               <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   Demo3<span class="caret"></span>
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">Drop1</a></li>
+                   <li><a href="#">Drop2</a></li>
+                   <li><a href="#">Drop3</a></li>
+                   <li class="devider"></li>
+                   <li><a href="#">Drop4</a></li>
+                 </ul>
+               </li>
+             </ul>
+
+             <div>
+               <p class="navbar-text">.navbar-text. I'm using .navbar-fixed-top to fixed top</p>
+             </div>
+
+             <div>
+               <p class="navbar-text navbar-right">Using class:
+                 <a href="#" class="navbar-link">.navbar-link</a>
+               </p>
+             </div>
+
+             <button type="button" class="btn btn-default navbar-btn pull-right">
+               导航栏按钮navbar-btn
+             </button>
+             <form class="navbar-form navbar-right" role="search">
+               <div class="form-group">
+                 <input results="search sth" type="search" class="form-control" placeholder="Search">
+               </div>
+               <button type="submit" class="btn btn-default">提交</button>
+             </form>    
+           </div>
+         </nav>
+       </div>
+
+     </div>
+   </body>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+ </html>
+

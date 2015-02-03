@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" lang="zh-CN">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap实例 - 导航</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <p>标签式导航列表.nav-tabs</p>
+        <ul id="first" class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu2</a></li>
+          <li><a href="#">Menu2</a></li>
+          <li><a href="#">Menu2</a></li>
+        </ul>
+      </div>
+
+      <hr class="alert-danger">
+
+      <div class="row">
+        <p>胶囊式导航列表.nav-pills</p>
+        <ul id="second" class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+      
+      <hr class="alert-danger">
+
+      <div class="row col-sm-2">
+        <p>胶囊纵向导航列表 .nav-stacked</p>
+        <ul id="third" class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+        </ul>
+      </div>
+
+      <hr class="alert-danger">
+      
+      <div class="row"></div>
+      <div class="row">
+        <p>两端对齐的导航元素.nav-justified</p>
+        <ul id="forth" class="nav nav-pills nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+
+      <hr class="alert-danger">
+
+      <div class="row">
+        <p>导航元素中的禁用链接 .disabled</p>
+        <ul class="nav nav-pills" id="fifth">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li class="disabled"><a href="#">iOS（禁用链接）</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+
+      <hr class="alert-danger">
+
+      <div class="row">
+        <p>带有下拉菜单的标签</p>
+        <ul id="sixth" class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Java <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Swing</a></li>
+              <li><a href="#">jMeter</a></li>
+              <li><a href="#">EJB</a></li>
+              <li class="divider"></li>
+              <li><a href="#">分离的链接</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("li a").click(function(){
+        var selector = "#" + $(this).parent().parent().attr("id") + " li";
+        $(selector).removeClass("active");
+        $(this).parent().addClass("active");
+      })
+    })
+  </script>
+</html>
